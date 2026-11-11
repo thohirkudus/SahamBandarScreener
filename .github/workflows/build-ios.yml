@@ -9,8 +9,7 @@ on:
 
 jobs:
   build:
-    name: Build SahamBandarScreener (iOS 17)
-    runs-on: macos-14
+    runs-on: macos-latest  # Ganti dari macos-14-arm64-us-default menjadi macos-latest
 
     steps:
       - name: Checkout Repository
