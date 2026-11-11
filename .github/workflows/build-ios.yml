@@ -1,0 +1,36 @@
+name: Build iOS 17 App
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build SahamBandarScreener (iOS 17)
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode Version
+        run: |
+          sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+          xcodebuild -version
+
+      - name: Run Unit Tests
+        run: |
+          swift test
+
+      - name: Build Swift Package for iOS 17
+        run: |
+          swift build -c release --triple arm64-apple-ios17.0
+
+      - name: Archive Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: SahamBandarScreener-iOS17-Build
+          path: .build/release/
