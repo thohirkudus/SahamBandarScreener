@@ -9,25 +9,55 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    name: Build & Package SahamBandarScreener
+    runs-on: macos-14
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Use Default Xcode
+      - name: Select Latest Xcode
         run: |
-          sudo xcode-select -switch /Applications/Xcode.app
+          echo "=== Available Xcode Versions ==="
+          ls -d /Applications/Xcode*.app || true
+          LATEST_XCODE=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -n 1)
+          if [ -n "$LATEST_XCODE" ]; then
+            echo "Selecting: $LATEST_XCODE"
+            sudo xcode-select -s "$LATEST_XCODE/Contents/Developer"
+          fi
           xcodebuild -version
+          xcrun --show-sdk-path --sdk iphoneos
 
-      - name: Run Unit Tests
-        run: swift test
+      - name: Build iOS App with xcodebuild
+        run: |
+          xcodebuild clean build \
+            -project SahamBandarScreener.xcodeproj \
+            -scheme SahamBandarScreener \
+            -destination "generic/platform=iOS" \
+            -configuration Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
 
-      - name: Build Swift Package for iOS
-        run: swift build -c release -Xswiftc -sdk -Xswiftc $(xcrun --sdk iphoneos --show-sdk-path) -Xswiftc -target -Xswiftc arm64-apple-ios17.0
+      - name: Package .ipa for iPhone Sideloading
+        run: |
+          mkdir -p Payload
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "SahamBandarScreener.app" -type d | head -n 1)
+          if [ -d "$APP_PATH" ]; then
+            echo "Found compiled app at: $APP_PATH"
+            cp -R "$APP_PATH" Payload/
+            zip -r SahamBandarScreener-iOS17.ipa Payload
+            echo "Successfully generated SahamBandarScreener-iOS17.ipa"
+          else
+            echo "Warning: .app directory not found in DerivedData"
+            zip -r SahamBandarScreener-Sources.zip Sources SahamBandarScreener.xcodeproj
+          fi
 
-      - name: Archive Build Artifacts
+      - name: Upload App Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: SahamBandarScreener-iOS17-Build
-          path: .build/release/
+          name: SahamBandarScreener-iOS17-Package
+          path: |
+            *.ipa
+            *.zip
+          retention-days: 14

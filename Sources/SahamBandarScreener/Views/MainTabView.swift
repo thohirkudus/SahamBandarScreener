@@ -1,11 +1,15 @@
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 public struct MainTabView: View {
     @State private var watchlistVM = WatchlistViewModel()
     @State private var selectedTab = 0
     
     public init() {
-        // Customize TabBar appearance
+        #if canImport(UIKit) && !os(watchOS)
+        // Customize TabBar appearance for iOS
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(Color.appCardBackground)
@@ -21,6 +25,7 @@ public struct MainTabView: View {
         
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
+        #endif
     }
     
     public var body: some View {

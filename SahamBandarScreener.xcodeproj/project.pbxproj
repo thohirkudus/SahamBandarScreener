@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4FCCDE00075823F6EA7A84D /* SahamBandarScreenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C98B4DD98A25B0BB280320 /* SahamBandarScreenerApp.swift */; };
+		E2FBCBEED3E289F6824DCAFD /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82F953B04ED0ED66C58591 /* Color+Theme.swift */; };
+		A90ACC255B5A2E13ADE479A3 /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D26132133DDE521D0D793 /* Double+Currency.swift */; };
+		30287EBF1E2EE52CA4CBDCE5 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55B44238D9314139E523EB /* Stock.swift */; };
+		4F453DB92A887AEC3FA0A69D /* BandarmologyFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E34DF21FCE7072DCE2E16F /* BandarmologyFlow.swift */; };
+		1FF4EB9813C7840F4447243F /* TechnicalIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673AFC94738DF48799FADC9F /* TechnicalIndicators.swift */; };
+		DDBB6FBB733B4E18D2643AAC /* ScreeningFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B880F6E5C4764840FE5C6A /* ScreeningFilter.swift */; };
+		3B53D9B74A434B7A1B72CA7E /* TechnicalAnalysisEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D51FF09F7214A338E72ED /* TechnicalAnalysisEngine.swift */; };
+		8E3E60271B91EC3FE7EC1C74 /* BandarmologyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372A8559899D88688EDDFD6 /* BandarmologyEngine.swift */; };
+		52E3F1684EA44A395DB9AF84 /* StockDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC98500E79F09848FDB590B /* StockDataServiceProtocol.swift */; };
+		19AC3DA8E557322A178C7A8B /* MockStockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021B0E4CE7C20DF42DE7AEB /* MockStockDataService.swift */; };
+		CF1767C0C728A69EA2C7BAC0 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BB990F71004C50371C61 /* APIRepository.swift */; };
+		DEAEF214E3EB37698E58293E /* ScreenerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A53BD11243B5711AB3171 /* ScreenerViewModel.swift */; };
+		C663A24C4DD1BF6F0796DD64 /* StockDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD05B2D02295452DA7589B0 /* StockDetailViewModel.swift */; };
+		5B8BF52233832733AA0659FA /* WatchlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170FE8741B9DF8CAE8205418 /* WatchlistViewModel.swift */; };
+		D21362B7CCDB3519BDF88FF3 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777471EA60FFBE4629A5DE /* MainTabView.swift */; };
+		CFC5CA8C4E8055D6897ED601 /* StatusPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCEF7F6C43ADD2B0EB3E354 /* StatusPillView.swift */; };
+		0C617471E93C8B1AAB7C129B /* ScreenerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71D6FCCD8A582EA02A9F5D /* ScreenerView.swift */; };
+		AFB8A4C6F73D77DE12DD7F9D /* StockRowCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D35FA47D32C4E8D800C7C7 /* StockRowCardView.swift */; };
+		AED5E2C55118F154A4F46A9F /* FilterSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04302B6D20DAA5A12E7C912F /* FilterSheetView.swift */; };
+		6B9D2144024E7F29685DA8EC /* ScreeningHeaderStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CAA6BD8FDB2836D1E4A76 /* ScreeningHeaderStatsView.swift */; };
+		018682CE83CDE41F43969B4F /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FE5C64F264F99EE14F62B6 /* StockDetailView.swift */; };
+		A04C1F5EF62481EF777F8294 /* MACDChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F660DE3EE3020C2CDB3516 /* MACDChartView.swift */; };
+		1CE4ED429EEB6E506CD78E69 /* BandarFlowAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C332930A7F0EE18FD655280 /* BandarFlowAnalysisView.swift */; };
+		888DD9A129967E03DF8842D9 /* BrokerSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B8AD39D7AD954E934FE467 /* BrokerSummaryView.swift */; };
+		FCE819FD72BFB64536537EE6 /* ConfluenceScoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732C560F0EA50D5CC25E9BF /* ConfluenceScoreCardView.swift */; };
+		785C078E49D47C90CB7C3327 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47889CF18EF75CC6B6C7CC3 /* WatchlistView.swift */; };
+		3C354A6B0D855C36F395E356 /* BandarmologyGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E8B2C80798C735EAE47A0 /* BandarmologyGuideView.swift */; };
+		E17A97826E5CD8C141000DA8 /* TechnicalAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD69003DE6F0B504A071598 /* TechnicalAnalysisTests.swift */; };
+		D7330FA54A3938EE24C43BDD /* BandarmologyEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC23BE930FC491EBD77246 /* BandarmologyEngineTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7FA166B3D2D812B47B67F76 /* SahamBandarScreener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SahamBandarScreener.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B6794BAA67E78C54ED6939 /* SahamBandarScreenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SahamBandarScreenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C98B4DD98A25B0BB280320 /* SahamBandarScreenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/App/SahamBandarScreenerApp.swift"; sourceTree = "<group>"; };
+		7C82F953B04ED0ED66C58591 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Extensions/Color+Theme.swift"; sourceTree = "<group>"; };
+		0B5D26132133DDE521D0D793 /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Extensions/Double+Currency.swift"; sourceTree = "<group>"; };
+		BE55B44238D9314139E523EB /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Models/Stock.swift"; sourceTree = "<group>"; };
+		16E34DF21FCE7072DCE2E16F /* BandarmologyFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Models/BandarmologyFlow.swift"; sourceTree = "<group>"; };
+		673AFC94738DF48799FADC9F /* TechnicalIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Models/TechnicalIndicators.swift"; sourceTree = "<group>"; };
+		E2B880F6E5C4764840FE5C6A /* ScreeningFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Models/ScreeningFilter.swift"; sourceTree = "<group>"; };
+		271D51FF09F7214A338E72ED /* TechnicalAnalysisEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Services/TechnicalAnalysisEngine.swift"; sourceTree = "<group>"; };
+		2372A8559899D88688EDDFD6 /* BandarmologyEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Services/BandarmologyEngine.swift"; sourceTree = "<group>"; };
+		0EC98500E79F09848FDB590B /* StockDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Services/StockDataServiceProtocol.swift"; sourceTree = "<group>"; };
+		E021B0E4CE7C20DF42DE7AEB /* MockStockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Services/MockStockDataService.swift"; sourceTree = "<group>"; };
+		D715BB990F71004C50371C61 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Services/APIRepository.swift"; sourceTree = "<group>"; };
+		5B4A53BD11243B5711AB3171 /* ScreenerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/ViewModels/ScreenerViewModel.swift"; sourceTree = "<group>"; };
+		AAD05B2D02295452DA7589B0 /* StockDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/ViewModels/StockDetailViewModel.swift"; sourceTree = "<group>"; };
+		170FE8741B9DF8CAE8205418 /* WatchlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/ViewModels/WatchlistViewModel.swift"; sourceTree = "<group>"; };
+		7C777471EA60FFBE4629A5DE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/MainTabView.swift"; sourceTree = "<group>"; };
+		2CCEF7F6C43ADD2B0EB3E354 /* StatusPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Components/StatusPillView.swift"; sourceTree = "<group>"; };
+		5D71D6FCCD8A582EA02A9F5D /* ScreenerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Screener/ScreenerView.swift"; sourceTree = "<group>"; };
+		B6D35FA47D32C4E8D800C7C7 /* StockRowCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Screener/StockRowCardView.swift"; sourceTree = "<group>"; };
+		04302B6D20DAA5A12E7C912F /* FilterSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Screener/FilterSheetView.swift"; sourceTree = "<group>"; };
+		5A0CAA6BD8FDB2836D1E4A76 /* ScreeningHeaderStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Screener/ScreeningHeaderStatsView.swift"; sourceTree = "<group>"; };
+		17FE5C64F264F99EE14F62B6 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Detail/StockDetailView.swift"; sourceTree = "<group>"; };
+		B6F660DE3EE3020C2CDB3516 /* MACDChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Detail/MACDChartView.swift"; sourceTree = "<group>"; };
+		6C332930A7F0EE18FD655280 /* BandarFlowAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Detail/BandarFlowAnalysisView.swift"; sourceTree = "<group>"; };
+		48B8AD39D7AD954E934FE467 /* BrokerSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Detail/BrokerSummaryView.swift"; sourceTree = "<group>"; };
+		F732C560F0EA50D5CC25E9BF /* ConfluenceScoreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Detail/ConfluenceScoreCardView.swift"; sourceTree = "<group>"; };
+		B47889CF18EF75CC6B6C7CC3 /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Watchlist/WatchlistView.swift"; sourceTree = "<group>"; };
+		EE7E8B2C80798C735EAE47A0 /* BandarmologyGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SahamBandarScreener/Views/Strategy/BandarmologyGuideView.swift"; sourceTree = "<group>"; };
+		8BD69003DE6F0B504A071598 /* TechnicalAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests/SahamBandarScreenerTests/TechnicalAnalysisTests.swift"; sourceTree = "<group>"; };
+		F3BC23BE930FC491EBD77246 /* BandarmologyEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests/SahamBandarScreenerTests/BandarmologyEngineTests.swift"; sourceTree = "<group>"; };
+		D620D087190D7D2AE1FA5136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sources/App/Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9914FF788F10C1616785B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719A8CCA37EDA2894F85F0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C999E731352905727541C3C = {
+			isa = PBXGroup;
+			children = (
+				D8459709F6D9BD48D2B42821 /* Sources */,
+				ED4596A01DC028978AB2F21B /* Tests */,
+				6D159F361021D92BC3E10E55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D159F361021D92BC3E10E55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA166B3D2D812B47B67F76 /* SahamBandarScreener.app */,
+				D5B6794BAA67E78C54ED6939 /* SahamBandarScreenerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8459709F6D9BD48D2B42821 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				24C98B4DD98A25B0BB280320 /* SahamBandarScreenerApp.swift */,
+				7C82F953B04ED0ED66C58591 /* Color+Theme.swift */,
+				0B5D26132133DDE521D0D793 /* Double+Currency.swift */,
+				BE55B44238D9314139E523EB /* Stock.swift */,
+				16E34DF21FCE7072DCE2E16F /* BandarmologyFlow.swift */,
+				673AFC94738DF48799FADC9F /* TechnicalIndicators.swift */,
+				E2B880F6E5C4764840FE5C6A /* ScreeningFilter.swift */,
+				271D51FF09F7214A338E72ED /* TechnicalAnalysisEngine.swift */,
+				2372A8559899D88688EDDFD6 /* BandarmologyEngine.swift */,
+				0EC98500E79F09848FDB590B /* StockDataServiceProtocol.swift */,
+				E021B0E4CE7C20DF42DE7AEB /* MockStockDataService.swift */,
+				D715BB990F71004C50371C61 /* APIRepository.swift */,
+				5B4A53BD11243B5711AB3171 /* ScreenerViewModel.swift */,
+				AAD05B2D02295452DA7589B0 /* StockDetailViewModel.swift */,
+				170FE8741B9DF8CAE8205418 /* WatchlistViewModel.swift */,
+				7C777471EA60FFBE4629A5DE /* MainTabView.swift */,
+				2CCEF7F6C43ADD2B0EB3E354 /* StatusPillView.swift */,
+				5D71D6FCCD8A582EA02A9F5D /* ScreenerView.swift */,
+				B6D35FA47D32C4E8D800C7C7 /* StockRowCardView.swift */,
+				04302B6D20DAA5A12E7C912F /* FilterSheetView.swift */,
+				5A0CAA6BD8FDB2836D1E4A76 /* ScreeningHeaderStatsView.swift */,
+				17FE5C64F264F99EE14F62B6 /* StockDetailView.swift */,
+				B6F660DE3EE3020C2CDB3516 /* MACDChartView.swift */,
+				6C332930A7F0EE18FD655280 /* BandarFlowAnalysisView.swift */,
+				48B8AD39D7AD954E934FE467 /* BrokerSummaryView.swift */,
+				F732C560F0EA50D5CC25E9BF /* ConfluenceScoreCardView.swift */,
+				B47889CF18EF75CC6B6C7CC3 /* WatchlistView.swift */,
+				EE7E8B2C80798C735EAE47A0 /* BandarmologyGuideView.swift */,
+				D620D087190D7D2AE1FA5136 /* Info.plist */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		ED4596A01DC028978AB2F21B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8BD69003DE6F0B504A071598 /* TechnicalAnalysisTests.swift */,
+				F3BC23BE930FC491EBD77246 /* BandarmologyEngineTests.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0100012C12345600000001 /* SahamBandarScreener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B210DD1C3B572803298B3FB /* Build configuration list for PBXNativeTarget "SahamBandarScreener" */;
+			buildPhases = (
+				0DBDD313236E80205C59E566 /* Sources */,
+				A9914FF788F10C1616785B95 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SahamBandarScreener;
+			productName = SahamBandarScreener;
+			productReference = B7FA166B3D2D812B47B67F76 /* SahamBandarScreener.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA0100022C12345600000002 /* SahamBandarScreenerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545CD3DA43A5A0865BCB5F30 /* Build configuration list for PBXNativeTarget "SahamBandarScreenerTests" */;
+			buildPhases = (
+				13B7451FC8A4D1526B49E800 /* Sources */,
+				719A8CCA37EDA2894F85F0FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SahamBandarScreenerTests;
+			productName = SahamBandarScreenerTests;
+			productReference = D5B6794BAA67E78C54ED6939 /* SahamBandarScreenerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0100002C12345600000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AA0100012C12345600000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AA0100022C12345600000002 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AA0100012C12345600000001;
+					};
+				};
+			};
+			buildConfigurationList = 66C115E9D28FAC0EC0475D61 /* Build configuration list for PBXProject "SahamBandarScreener" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C999E731352905727541C3C;
+			productRefGroup = 6D159F361021D92BC3E10E55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0100012C12345600000001 /* SahamBandarScreener */,
+				AA0100022C12345600000002 /* SahamBandarScreenerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DBDD313236E80205C59E566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FCCDE00075823F6EA7A84D /* SahamBandarScreenerApp.swift in Sources */,
+				E2FBCBEED3E289F6824DCAFD /* Color+Theme.swift in Sources */,
+				A90ACC255B5A2E13ADE479A3 /* Double+Currency.swift in Sources */,
+				30287EBF1E2EE52CA4CBDCE5 /* Stock.swift in Sources */,
+				4F453DB92A887AEC3FA0A69D /* BandarmologyFlow.swift in Sources */,
+				1FF4EB9813C7840F4447243F /* TechnicalIndicators.swift in Sources */,
+				DDBB6FBB733B4E18D2643AAC /* ScreeningFilter.swift in Sources */,
+				3B53D9B74A434B7A1B72CA7E /* TechnicalAnalysisEngine.swift in Sources */,
+				8E3E60271B91EC3FE7EC1C74 /* BandarmologyEngine.swift in Sources */,
+				52E3F1684EA44A395DB9AF84 /* StockDataServiceProtocol.swift in Sources */,
+				19AC3DA8E557322A178C7A8B /* MockStockDataService.swift in Sources */,
+				CF1767C0C728A69EA2C7BAC0 /* APIRepository.swift in Sources */,
+				DEAEF214E3EB37698E58293E /* ScreenerViewModel.swift in Sources */,
+				C663A24C4DD1BF6F0796DD64 /* StockDetailViewModel.swift in Sources */,
+				5B8BF52233832733AA0659FA /* WatchlistViewModel.swift in Sources */,
+				D21362B7CCDB3519BDF88FF3 /* MainTabView.swift in Sources */,
+				CFC5CA8C4E8055D6897ED601 /* StatusPillView.swift in Sources */,
+				0C617471E93C8B1AAB7C129B /* ScreenerView.swift in Sources */,
+				AFB8A4C6F73D77DE12DD7F9D /* StockRowCardView.swift in Sources */,
+				AED5E2C55118F154A4F46A9F /* FilterSheetView.swift in Sources */,
+				6B9D2144024E7F29685DA8EC /* ScreeningHeaderStatsView.swift in Sources */,
+				018682CE83CDE41F43969B4F /* StockDetailView.swift in Sources */,
+				A04C1F5EF62481EF777F8294 /* MACDChartView.swift in Sources */,
+				1CE4ED429EEB6E506CD78E69 /* BandarFlowAnalysisView.swift in Sources */,
+				888DD9A129967E03DF8842D9 /* BrokerSummaryView.swift in Sources */,
+				FCE819FD72BFB64536537EE6 /* ConfluenceScoreCardView.swift in Sources */,
+				785C078E49D47C90CB7C3327 /* WatchlistView.swift in Sources */,
+				3C354A6B0D855C36F395E356 /* BandarmologyGuideView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B7451FC8A4D1526B49E800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17A97826E5CD8C141000DA8 /* TechnicalAnalysisTests.swift in Sources */,
+				D7330FA54A3938EE24C43BDD /* BandarmologyEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A8193A6E565F63D7B8F27FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2D119E475333A59904493C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		10D7CCE47DE6580AB96D1F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Sources/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahambandar.screener;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8E826AB7C050BD3EEF146FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Sources/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahambandar.screener;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D0504ABCA41C0D72C21C6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahambandar.screener.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SahamBandarScreener.app/SahamBandarScreener";
+			};
+			name = Debug;
+		};
+		AE902B88DC9ED7EA360CC29A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahambandar.screener.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SahamBandarScreener.app/SahamBandarScreener";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66C115E9D28FAC0EC0475D61 /* Build configuration list for PBXProject "SahamBandarScreener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8193A6E565F63D7B8F27FB /* Debug */,
+				2D119E475333A59904493C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B210DD1C3B572803298B3FB /* Build configuration list for PBXNativeTarget "SahamBandarScreener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D7CCE47DE6580AB96D1F39 /* Debug */,
+				A8E826AB7C050BD3EEF146FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545CD3DA43A5A0865BCB5F30 /* Build configuration list for PBXNativeTarget "SahamBandarScreenerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0504ABCA41C0D72C21C6AB /* Debug */,
+				AE902B88DC9ED7EA360CC29A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0100002C12345600000000 /* Project object */;
+}

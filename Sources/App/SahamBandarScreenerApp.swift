@@ -1,4 +1,5 @@
 import SwiftUI
+import SahamBandarScreener
 
 @main
 public struct SahamBandarScreenerApp: App {
