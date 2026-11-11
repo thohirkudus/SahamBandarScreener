@@ -10,21 +10,14 @@ on:
 jobs:
   build:
     name: Build & Package SahamBandarScreener
-    runs-on: macos-14
+    runs-on: macos-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Select Latest Xcode
+      - name: Show Xcode & SDK Info
         run: |
-          echo "=== Available Xcode Versions ==="
-          ls -d /Applications/Xcode*.app || true
-          LATEST_XCODE=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -n 1)
-          if [ -n "$LATEST_XCODE" ]; then
-            echo "Selecting: $LATEST_XCODE"
-            sudo xcode-select -s "$LATEST_XCODE/Contents/Developer"
-          fi
           xcodebuild -version
           xcrun --show-sdk-path --sdk iphoneos
 
