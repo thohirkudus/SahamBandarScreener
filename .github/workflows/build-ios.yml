@@ -15,13 +15,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: '^15.4'
-
-      - name: Verify Xcode Version
-        run: xcodebuild -version
+      - name: Use Default Xcode
+        run: |
+          sudo xcode-select -switch /Applications/Xcode.app
+          xcodebuild -version
 
       - name: Run Unit Tests
         run: swift test
